@@ -22,14 +22,14 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link {% if nav == 'home'  %} active {% endif %}" aria-current="page" href="{% url 'portfolio:home' %}">Home</a>
+                    <a class="nav-link {% if nav == 'home'  %} active-nav {% endif %}" aria-current="page" href="{% url 'portfolio:home' %}">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link {% if nav == 'about'  %} active {% endif %}" href="{% url 'portfolio:about' %}">About</a>
+                    <a class="nav-link {% if nav == 'about'  %} active-nav {% endif %}" href="{% url 'portfolio:about' %}">About</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link {% if nav == 'services'  %} active-nav {% endif %}" href="{% url 'portfolio:services' %}">Services</a>
                   </li>
 
                   <li class="nav-item">
